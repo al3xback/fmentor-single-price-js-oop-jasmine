@@ -54,8 +54,8 @@ class Card extends Component {
 		);
 
 		const sectionJoinCommunitySubtitleEl = this.createElement(
-			'mark',
-			'card__mark',
+			'p',
+			'card__subtitle',
 			'30-day, hassle-free money back guarantee'
 		);
 

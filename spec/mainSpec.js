@@ -14,15 +14,15 @@ describe('DOM', () => {
 
 	it("should be able to create element via 'Component' class method", () => {
 		const component = new Component();
-		const markEl = component.createElement(
-			'mark',
+		const subtitleEl = component.createElement(
+			'p',
 			'highlight',
 			'Lorem ipsum'
 		);
-		document.body.appendChild(markEl);
+		document.body.appendChild(subtitleEl);
 
-		const isMarkElExist = !!document.querySelector('.highlight');
-		expect(isMarkElExist).not.toBeNull();
+		const issubtitleElExist = !!document.querySelector('.highlight');
+		expect(issubtitleElExist).not.toBeNull();
 	});
 
 	it("should be able to return element attribute data via 'Component' class method", () => {
